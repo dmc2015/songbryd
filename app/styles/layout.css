@@ -1,0 +1,9 @@
+/*layout*/
+html, body{
+  margin: 20px;
+}
+
+.list-wrapper{
+  margin-left: 0;
+  margin-right: 0;
+}
