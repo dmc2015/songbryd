@@ -1,3 +1,5 @@
+// app/controllers/application.js
+
 import Ember from 'ember';
 
 var Song = Ember.Object.extend({
@@ -7,7 +9,7 @@ var Song = Ember.Object.extend({
 });
 
 
-var SongCollection = Ember.ArrayProxy.extend(Ember.SortableMixin,{
+var SongCollection = Ember.ArrayProxy.extend(Ember.SortableMixin, {
   sortProperties: ['rating'],
   sortAscending: false,
   content: []
@@ -22,9 +24,9 @@ var blackDog = Song.create({
 });
 
 var yellowLedbetter = Song.create({
-  title: 'Black Dog',
-  band: 'Led Zeppelin',
-  rating: 3
+  title: 'Yellow Ledbetter',
+  band: 'Pearl Jam',
+  rating: 4
 });
 
 var pretender = Song.create({
@@ -34,14 +36,6 @@ var pretender = Song.create({
 });
 
 songs.pushObjects([blackDog, yellowLedbetter, pretender]);
-//
-// App = Ember.Application.create();
-//
-// App.ApplicationRoute = Ember.Route.extend({
-//   model: function(){
-//     return songs;
-//   }
-// });
 
 export default Ember.Controller.extend({
   songs: songs
