@@ -20,6 +20,14 @@
     <script src="assets/vendor.js"></script>
     <script src="assets/songbryd.js"></script>
 
+<script type="text/x-handlebars">
+  <ul>
+{{#each model as |song|}}
+<li>{{song.title}} by {{song.band}} ({{song.rating}})</li>
+{/each}
+</ul>
+</script>
+
     {{content-for 'body-footer'}}
   </body>
 </html>
