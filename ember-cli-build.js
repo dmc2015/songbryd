@@ -6,6 +6,14 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', { destDir: 'assets'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.eot', { destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.svg', { destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.tff', { destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.woff', { destDir: 'fonts'});
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.woff2', { destDir: 'fonts'});
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
