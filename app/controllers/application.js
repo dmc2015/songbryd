@@ -7,13 +7,23 @@ var Song = Ember.Object.extend({
 });
 
 
+
+
+
+
 var SongCollection = Ember.ArrayProxy.extend(Ember.SortableMixin,{
   sortProperties: ['rating'],
   sortAscending: false,
   content: []
 });
 
+
+
 var songs = SongCollection.create();
+
+
+
+
 
 var blackDog = Song.create({
   title: 'Black Dog',
@@ -34,6 +44,20 @@ var pretender = Song.create({
 });
 
 songs.pushObjects([blackDog, yellowLedbetter, pretender]);
+
+
+window.songs = songs;
+
+var alwaysWaiting = Song.create({
+  title: 'Always Waiting',
+  band: 'Kaya Project',
+  rating: 1
+});
+
+window.newSong = alwaysWaiting;
+
+
+
 //
 // App = Ember.Application.create();
 //
@@ -42,6 +66,10 @@ songs.pushObjects([blackDog, yellowLedbetter, pretender]);
 //     return songs;
 //   }
 // });
+
+
+
+
 
 export default Ember.Controller.extend({
   songs: songs
