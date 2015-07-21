@@ -1,9 +1,16 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
 
-  
-  <p>hello</p>
+<ul>
+  {{#each songs as |song|}}
+  <li>{{song.title}} by {{song.band}}
+    ({{song.rating}})
+  </li>
+  {{/each}}
+</ul>
+
+
+<p>hello</p>
 
 
 {{outlet}}
-
