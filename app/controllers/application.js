@@ -3,7 +3,7 @@ import Ember from 'ember';
 var Song = Ember.Object.extend({
   title: '',
   rating: 0,
-  musican: ''
+  band: ''
 });
 
 
@@ -27,30 +27,30 @@ var songs = SongCollection.create();
 
 var blackDog = Song.create({
   title: 'Black Dog',
-  musican: 'Led Zeppelin',
+  band: 'Led Zeppelin',
   rating: 3
 });
 
 var yellowLedbetter = Song.create({
-  title: 'Black Dog',
-  musican: 'Led Zeppelin',
+  title: 'Yellow Led Better Dog',
+  band: 'Led Zeppelin',
   rating: 3
 });
 
 var pretender = Song.create({
   title: 'The Pretender',
-  musican: 'Foo Fighters',
+  band: 'Foo Fighters',
   rating: 2
 });
 
-songs.pushObjects([blackDog, yellowLedbetter, pretender]);
+songs.pushObject([blackDog, yellowLedbetter, pretender]);
 
 
 window.songs = songs;
 
 var alwaysWaiting = Song.create({
   title: 'Always Waiting',
-  musican: 'Kaya Project',
+  band: 'Kaya Project',
   rating: 1
 });
 

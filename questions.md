@@ -1,8 +1,4 @@
-git commits to track exactly what changes are going on and make sure the book is up to date with the repository
 
-more reference about specifically what line the code should be input on
-
-not your fault obviously but rails has awesome error messages....ember WTF
 
 
 Why are there so many jquery errors
@@ -44,3 +40,15 @@ If you
 
 
 gumroad offers a bad product, page nav is generally less then functional
+
+
+--------------
+
+how does storing the data in the route compare to storing the data in the application.js?
+is storing in the route asychronous and storing in the application.js static?
+
+
+----------------
+
+why do ember objects need to be created in the controller/application.js
+and in the routes/routename.js  ?
