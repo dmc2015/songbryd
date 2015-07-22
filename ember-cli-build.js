@@ -13,6 +13,7 @@ module.exports = function(defaults) {
   app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.tff', { destDir: 'fonts'});
   app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.woff', { destDir: 'fonts'});
   app.import('bower_components/bootstrap/dist/fonts/glyphicons-haflings-regular.woff2', { destDir: 'fonts'});
+  app.import('app/styles/app.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
